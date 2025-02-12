@@ -39,6 +39,56 @@ body {
     list-style: none;
     gap: 2rem;
 }
+.search-section {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    margin: 20px auto;
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: 2px 2px 10px rgba(12, 12, 12, 0.1);
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    width: 60%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-btn, .reset-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-btn {
+    background-color: #ff5722;
+    color: white;
+}
+
+.search-btn:hover {
+    background-color: #bb350c;
+}
+
+.reset-btn {
+    background-color: #ddd;
+}
+
+.reset-btn:hover {
+    background-color: #bbb;
+}
+
 .hero {
     background-color: #196cc5; 
     color: white;
@@ -48,25 +98,64 @@ body {
     background-size: cover;
     background-position: center;
 }
-.hero h1 {
-    font-size: 48px;
+.hero h2 {
+    font-size: 52px;
     font-weight: bold;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .hero p {
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 30px;
 }
 .hero .btn {
     background-color: #fea011; 
     color: white;
-    padding: 12px 25px;
+    padding: 18px 30px;
     text-decoration: none;
     border-radius: 30px;
     font-size: 18px;
     transition: background-color 0.3s ease;
 }
 .hero .btn:hover {
-    background-color: #f29407;
+    background-color: #f29407; 
 }
+.rooms-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+.room-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px; 
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+.room-card img {
+    width: 100%; /* Make image fit the width of the card */
+    height: 200px;
+    object-fit: cover; /* Crop the image to cover the space */
+    border-bottom: 1px solid #ddd;
+}
+.room-card h3 {
+    font-size: 1.25rem;
+    color: #2c3e50;
+    margin: 10px 0;
+}
+.room-card p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #555;
+}
+.room-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
